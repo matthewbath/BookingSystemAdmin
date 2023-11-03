@@ -40,9 +40,9 @@
             cmbTime = new ComboBox();
             groupBox1 = new GroupBox();
             groupBox2 = new GroupBox();
-            button1 = new Button();
-            button2 = new Button();
-            label1 = new Label();
+            btnCancel = new Button();
+            btnSubmit = new Button();
+            lbl_heading = new Label();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             SuspendLayout();
@@ -158,41 +158,42 @@
             groupBox2.TabStop = false;
             groupBox2.Text = "Appointment Details";
             // 
-            // button1
+            // btnCancel
             // 
-            button1.Location = new Point(288, 497);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 12;
-            button1.Text = "Cancel";
-            button1.UseVisualStyleBackColor = true;
+            btnCancel.Location = new Point(283, 497);
+            btnCancel.Name = "btnCancel";
+            btnCancel.Size = new Size(75, 23);
+            btnCancel.TabIndex = 12;
+            btnCancel.Text = "Cancel";
+            btnCancel.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnSubmit
             // 
-            button2.Location = new Point(427, 497);
-            button2.Name = "button2";
-            button2.Size = new Size(111, 23);
-            button2.TabIndex = 13;
-            button2.Text = "Submit Booking";
-            button2.UseVisualStyleBackColor = true;
+            btnSubmit.Location = new Point(427, 497);
+            btnSubmit.Name = "btnSubmit";
+            btnSubmit.Size = new Size(111, 23);
+            btnSubmit.TabIndex = 13;
+            btnSubmit.Text = "Submit Booking";
+            btnSubmit.UseVisualStyleBackColor = true;
             // 
-            // label1
+            // lbl_heading
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(311, 50);
-            label1.Name = "label1";
-            label1.Size = new Size(164, 15);
-            label1.TabIndex = 14;
-            label1.Text = "Doctor Appointment Booking";
+            lbl_heading.AutoSize = true;
+            lbl_heading.Font = new Font("Roboto", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            lbl_heading.Location = new Point(283, 51);
+            lbl_heading.Name = "lbl_heading";
+            lbl_heading.Size = new Size(255, 23);
+            lbl_heading.TabIndex = 14;
+            lbl_heading.Text = "Doctor Appointment Booking";
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(784, 561);
-            Controls.Add(label1);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(lbl_heading);
+            Controls.Add(btnSubmit);
+            Controls.Add(btnCancel);
             Controls.Add(groupBox2);
             Controls.Add(groupBox1);
             FormBorderStyle = FormBorderStyle.FixedDialog;
@@ -222,8 +223,8 @@
         private ComboBox cmbTime;
         private GroupBox groupBox1;
         private GroupBox groupBox2;
-        private Button button1;
-        private Button button2;
-        private Label label1;
+        private Button btnCancel;
+        private Button btnSubmit;
+        private Label lbl_heading;
     }
 }
