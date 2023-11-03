@@ -92,9 +92,8 @@ namespace New_Patient_and_Doctor_Assignment
                 DateOfRegister = dateDateofRegister.Value
             };
 
-        patients.Add(newPatient);
-
-        txtName.Text = "";
+            patients.Add(newPatient);
+            txtName.Text = "";
         }
     }
 }

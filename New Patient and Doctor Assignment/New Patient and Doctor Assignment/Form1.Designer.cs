@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.ComboBox comboDoctorAssigned;
             this.lblNewPatient = new System.Windows.Forms.Label();
             this.lblName = new System.Windows.Forms.Label();
@@ -40,7 +39,6 @@
             this.lblNewPatientAddress = new System.Windows.Forms.Label();
             this.txtPhoneNum = new System.Windows.Forms.TextBox();
             this.lblPhoneNum = new System.Windows.Forms.Label();
-            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.boxDoctorDetails = new System.Windows.Forms.GroupBox();
             this.dateDateOfRegister = new System.Windows.Forms.DateTimePicker();
             this.lblDateOfRegister = new System.Windows.Forms.Label();
@@ -48,7 +46,6 @@
             this.btnConfirmPatient = new System.Windows.Forms.Button();
             comboDoctorAssigned = new System.Windows.Forms.ComboBox();
             this.boxNewPatientDetails.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.boxDoctorDetails.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -167,10 +164,6 @@
             this.lblPhoneNum.TabIndex = 5;
             this.lblPhoneNum.Text = "Phone Number";
             // 
-            // errorProvider1
-            // 
-            this.errorProvider1.ContainerControl = this;
-            // 
             // boxDoctorDetails
             // 
             this.boxDoctorDetails.Controls.Add(this.dateDateOfRegister);
@@ -242,7 +235,6 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.boxNewPatientDetails.ResumeLayout(false);
             this.boxNewPatientDetails.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.boxDoctorDetails.ResumeLayout(false);
             this.boxDoctorDetails.PerformLayout();
             this.ResumeLayout(false);
@@ -259,7 +251,6 @@
         private DateTimePicker dateDoB;
         private GroupBox boxNewPatientDetails;
         private Label lblPhoneNum;
-        private ErrorProvider errorProvider1;
         private TextBox txtPhoneNum;
         private TextBox txtNewPatientAddress;
         private Label lblNewPatientAddress;
