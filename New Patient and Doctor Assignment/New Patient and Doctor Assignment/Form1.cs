@@ -1,7 +1,10 @@
+using System.Net;
+
 namespace New_Patient_and_Doctor_Assignment
 {
     public partial class Form1 : Form
     {
+
         public Form1()
         {
             InitializeComponent();
@@ -60,6 +63,38 @@ namespace New_Patient_and_Doctor_Assignment
         private void lblDateOfRegister_Click(object sender, EventArgs e)
         {
 
+        }
+        List<Patient> patients = new List<Patient>();
+
+        public class Patient
+        {
+            public string Name { get; set; }
+            public DateTime DateOfBirth { get; set; }
+            public string PhoneNum { get; set; }
+            public string Address { get; set; }
+            public string DoctorAssigned { get; set; }
+            public DateTime DateOfRegister { get; set; }
+        }
+
+
+        private void btnConfirmPatient_Click(object sender, EventArgs e)
+        {
+            ComboBox comboDoctorAssigned = boxDoctorDetails.Controls["comboDoctorAssigned"] as ComboBox;
+            DateTimePicker dateDateofRegister = boxDoctorDetails.Controls["dateDateofRegister"] as DateTimePicker;
+
+            Patient newPatient = new Patient
+            {
+                Name = txtName.Text,
+                DateOfBirth = dateDoB.Value,
+                PhoneNum = txtPhoneNum.Text,
+                Address = txtNewPatientAddress.Text,
+                DoctorAssigned = comboDoctorAssigned.SelectedItem.ToString(),
+                DateOfRegister = dateDateofRegister.Value
+            };
+
+        patients.Add(newPatient);
+
+        txtName.Text = "";
         }
     }
 }

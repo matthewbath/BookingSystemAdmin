@@ -36,21 +36,30 @@
             this.lblDoB = new System.Windows.Forms.Label();
             this.dateDoB = new System.Windows.Forms.DateTimePicker();
             this.boxNewPatientDetails = new System.Windows.Forms.GroupBox();
-            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.lblPhoneNum = new System.Windows.Forms.Label();
-            this.txtPhoneNum = new System.Windows.Forms.TextBox();
-            this.lblNewPatientAddress = new System.Windows.Forms.Label();
             this.txtNewPatientAddress = new System.Windows.Forms.TextBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.lblDoctorName = new System.Windows.Forms.Label();
-            this.lblDateOfRegister = new System.Windows.Forms.Label();
+            this.lblNewPatientAddress = new System.Windows.Forms.Label();
+            this.txtPhoneNum = new System.Windows.Forms.TextBox();
+            this.lblPhoneNum = new System.Windows.Forms.Label();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.boxDoctorDetails = new System.Windows.Forms.GroupBox();
             this.dateDateOfRegister = new System.Windows.Forms.DateTimePicker();
+            this.lblDateOfRegister = new System.Windows.Forms.Label();
+            this.lblDoctorName = new System.Windows.Forms.Label();
             this.btnConfirmPatient = new System.Windows.Forms.Button();
             comboDoctorAssigned = new System.Windows.Forms.ComboBox();
             this.boxNewPatientDetails.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
-            this.groupBox1.SuspendLayout();
+            this.boxDoctorDetails.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // comboDoctorAssigned
+            // 
+            comboDoctorAssigned.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            comboDoctorAssigned.FormattingEnabled = true;
+            comboDoctorAssigned.Location = new System.Drawing.Point(145, 22);
+            comboDoctorAssigned.Name = "comboDoctorAssigned";
+            comboDoctorAssigned.Size = new System.Drawing.Size(350, 28);
+            comboDoctorAssigned.TabIndex = 3;
             // 
             // lblNewPatient
             // 
@@ -119,28 +128,14 @@
             this.boxNewPatientDetails.Text = "Patient Details";
             this.boxNewPatientDetails.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // errorProvider1
+            // txtNewPatientAddress
             // 
-            this.errorProvider1.ContainerControl = this;
-            // 
-            // lblPhoneNum
-            // 
-            this.lblPhoneNum.AutoSize = true;
-            this.lblPhoneNum.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblPhoneNum.Location = new System.Drawing.Point(6, 135);
-            this.lblPhoneNum.Name = "lblPhoneNum";
-            this.lblPhoneNum.Size = new System.Drawing.Size(116, 21);
-            this.lblPhoneNum.TabIndex = 5;
-            this.lblPhoneNum.Text = "Phone Number";
-            // 
-            // txtPhoneNum
-            // 
-            this.txtPhoneNum.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtPhoneNum.Location = new System.Drawing.Point(145, 135);
-            this.txtPhoneNum.Name = "txtPhoneNum";
-            this.txtPhoneNum.Size = new System.Drawing.Size(350, 27);
-            this.txtPhoneNum.TabIndex = 6;
-            this.txtPhoneNum.TextChanged += new System.EventHandler(this.txtPhoneNum_TextChanged);
+            this.txtNewPatientAddress.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtNewPatientAddress.Location = new System.Drawing.Point(145, 190);
+            this.txtNewPatientAddress.Name = "txtNewPatientAddress";
+            this.txtNewPatientAddress.Size = new System.Drawing.Size(350, 27);
+            this.txtNewPatientAddress.TabIndex = 8;
+            this.txtNewPatientAddress.TextChanged += new System.EventHandler(this.txtNewPatientAddress_TextChanged);
             // 
             // lblNewPatientAddress
             // 
@@ -153,48 +148,50 @@
             this.lblNewPatientAddress.Text = "Address";
             this.lblNewPatientAddress.Click += new System.EventHandler(this.lblNewPatientAddress_Click);
             // 
-            // txtNewPatientAddress
+            // txtPhoneNum
             // 
-            this.txtNewPatientAddress.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtNewPatientAddress.Location = new System.Drawing.Point(145, 190);
-            this.txtNewPatientAddress.Name = "txtNewPatientAddress";
-            this.txtNewPatientAddress.Size = new System.Drawing.Size(350, 27);
-            this.txtNewPatientAddress.TabIndex = 8;
-            this.txtNewPatientAddress.TextChanged += new System.EventHandler(this.txtNewPatientAddress_TextChanged);
+            this.txtPhoneNum.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtPhoneNum.Location = new System.Drawing.Point(145, 135);
+            this.txtPhoneNum.Name = "txtPhoneNum";
+            this.txtPhoneNum.Size = new System.Drawing.Size(350, 27);
+            this.txtPhoneNum.TabIndex = 6;
+            this.txtPhoneNum.TextChanged += new System.EventHandler(this.txtPhoneNum_TextChanged);
             // 
-            // groupBox1
+            // lblPhoneNum
             // 
-            this.groupBox1.Controls.Add(this.dateDateOfRegister);
-            this.groupBox1.Controls.Add(this.lblDateOfRegister);
-            this.groupBox1.Controls.Add(comboDoctorAssigned);
-            this.groupBox1.Controls.Add(this.lblDoctorName);
-            this.groupBox1.Location = new System.Drawing.Point(125, 318);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(554, 122);
-            this.groupBox1.TabIndex = 6;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Doctor Details";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter_1);
+            this.lblPhoneNum.AutoSize = true;
+            this.lblPhoneNum.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblPhoneNum.Location = new System.Drawing.Point(6, 135);
+            this.lblPhoneNum.Name = "lblPhoneNum";
+            this.lblPhoneNum.Size = new System.Drawing.Size(116, 21);
+            this.lblPhoneNum.TabIndex = 5;
+            this.lblPhoneNum.Text = "Phone Number";
             // 
-            // lblDoctorName
+            // errorProvider1
             // 
-            this.lblDoctorName.AutoSize = true;
-            this.lblDoctorName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblDoctorName.Location = new System.Drawing.Point(9, 22);
-            this.lblDoctorName.Name = "lblDoctorName";
-            this.lblDoctorName.Size = new System.Drawing.Size(124, 21);
-            this.lblDoctorName.TabIndex = 2;
-            this.lblDoctorName.Text = "Doctor Assigned";
-            this.lblDoctorName.Click += new System.EventHandler(this.lblDoctorName_Click);
+            this.errorProvider1.ContainerControl = this;
             // 
-            // comboDoctorAssigned
+            // boxDoctorDetails
             // 
-            comboDoctorAssigned.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            comboDoctorAssigned.FormattingEnabled = true;
-            comboDoctorAssigned.Location = new System.Drawing.Point(145, 22);
-            comboDoctorAssigned.Name = "comboDoctorAssigned";
-            comboDoctorAssigned.Size = new System.Drawing.Size(350, 28);
-            comboDoctorAssigned.TabIndex = 3;
+            this.boxDoctorDetails.Controls.Add(this.dateDateOfRegister);
+            this.boxDoctorDetails.Controls.Add(this.lblDateOfRegister);
+            this.boxDoctorDetails.Controls.Add(comboDoctorAssigned);
+            this.boxDoctorDetails.Controls.Add(this.lblDoctorName);
+            this.boxDoctorDetails.Location = new System.Drawing.Point(125, 318);
+            this.boxDoctorDetails.Name = "boxDoctorDetails";
+            this.boxDoctorDetails.Size = new System.Drawing.Size(554, 122);
+            this.boxDoctorDetails.TabIndex = 6;
+            this.boxDoctorDetails.TabStop = false;
+            this.boxDoctorDetails.Text = "Doctor Details";
+            this.boxDoctorDetails.Enter += new System.EventHandler(this.groupBox1_Enter_1);
+            // 
+            // dateDateOfRegister
+            // 
+            this.dateDateOfRegister.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dateDateOfRegister.Location = new System.Drawing.Point(145, 72);
+            this.dateDateOfRegister.Name = "dateDateOfRegister";
+            this.dateDateOfRegister.Size = new System.Drawing.Size(350, 27);
+            this.dateDateOfRegister.TabIndex = 9;
             // 
             // lblDateOfRegister
             // 
@@ -207,13 +204,16 @@
             this.lblDateOfRegister.Text = "Today\'s Date";
             this.lblDateOfRegister.Click += new System.EventHandler(this.lblDateOfRegister_Click);
             // 
-            // dateDateOfRegister
+            // lblDoctorName
             // 
-            this.dateDateOfRegister.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.dateDateOfRegister.Location = new System.Drawing.Point(145, 72);
-            this.dateDateOfRegister.Name = "dateDateOfRegister";
-            this.dateDateOfRegister.Size = new System.Drawing.Size(350, 27);
-            this.dateDateOfRegister.TabIndex = 9;
+            this.lblDoctorName.AutoSize = true;
+            this.lblDoctorName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblDoctorName.Location = new System.Drawing.Point(9, 22);
+            this.lblDoctorName.Name = "lblDoctorName";
+            this.lblDoctorName.Size = new System.Drawing.Size(124, 21);
+            this.lblDoctorName.TabIndex = 2;
+            this.lblDoctorName.Text = "Doctor Assigned";
+            this.lblDoctorName.Click += new System.EventHandler(this.lblDoctorName_Click);
             // 
             // btnConfirmPatient
             // 
@@ -226,6 +226,7 @@
             this.btnConfirmPatient.TabIndex = 7;
             this.btnConfirmPatient.Text = "Confirm Patient";
             this.btnConfirmPatient.UseVisualStyleBackColor = false;
+            this.btnConfirmPatient.Click += new System.EventHandler(this.btnConfirmPatient_Click);
             // 
             // Form1
             // 
@@ -233,7 +234,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(765, 529);
             this.Controls.Add(this.btnConfirmPatient);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.boxDoctorDetails);
             this.Controls.Add(this.boxNewPatientDetails);
             this.Controls.Add(this.lblNewPatient);
             this.Name = "Form1";
@@ -242,8 +243,8 @@
             this.boxNewPatientDetails.ResumeLayout(false);
             this.boxNewPatientDetails.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.boxDoctorDetails.ResumeLayout(false);
+            this.boxDoctorDetails.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -262,10 +263,10 @@
         private TextBox txtPhoneNum;
         private TextBox txtNewPatientAddress;
         private Label lblNewPatientAddress;
-        private GroupBox groupBox1;
         private Label lblDoctorName;
         private Label lblDateOfRegister;
         private DateTimePicker dateDateOfRegister;
         private Button btnConfirmPatient;
+        private GroupBox boxDoctorDetails;
     }
 }

@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Users\\matth\\Desktop\\New Patient and Doctor Assignment\\New Patient and Doctor Assignment\\New Patient and Doctor Assignment.csproj",
+      "projectUniqueName": "C:\\Users\\matth\\Source\\Repos\\matthewbath\\BookingSystemAdmin\\New Patient and Doctor Assignment\\New Patient and Doctor Assignment\\New Patient and Doctor Assignment.csproj",
       "projectName": "New Patient and Doctor Assignment",
-      "projectPath": "D:\\Users\\matth\\Desktop\\New Patient and Doctor Assignment\\New Patient and Doctor Assignment\\New Patient and Doctor Assignment.csproj",
+      "projectPath": "C:\\Users\\matth\\Source\\Repos\\matthewbath\\BookingSystemAdmin\\New Patient and Doctor Assignment\\New Patient and Doctor Assignment\\New Patient and Doctor Assignment.csproj",
       "packagesPath": "C:\\Users\\matth\\.nuget\\packages\\",
-      "outputPath": "D:\\Users\\matth\\Desktop\\New Patient and Doctor Assignment\\New Patient and Doctor Assignment\\obj\\",
+      "outputPath": "C:\\Users\\matth\\Source\\Repos\\matthewbath\\BookingSystemAdmin\\New Patient and Doctor Assignment\\New Patient and Doctor Assignment\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\matth\\AppData\\Roaming\\NuGet\\NuGet.Config"
