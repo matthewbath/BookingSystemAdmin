@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\source\\repos\\matthewbath\\BookingSystemAdmin\\WinFormsApp1\\WinFormsApp1.csproj": {}
+    "D:\\BSA\\BookingSystemAdmin\\WinFormsApp1\\WinFormsApp1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\source\\repos\\matthewbath\\BookingSystemAdmin\\WinFormsApp1\\WinFormsApp1.csproj": {
+    "D:\\BSA\\BookingSystemAdmin\\WinFormsApp1\\WinFormsApp1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\source\\repos\\matthewbath\\BookingSystemAdmin\\WinFormsApp1\\WinFormsApp1.csproj",
+        "projectUniqueName": "D:\\BSA\\BookingSystemAdmin\\WinFormsApp1\\WinFormsApp1.csproj",
         "projectName": "WinFormsApp1",
-        "projectPath": "C:\\Users\\User\\source\\repos\\matthewbath\\BookingSystemAdmin\\WinFormsApp1\\WinFormsApp1.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\source\\repos\\matthewbath\\BookingSystemAdmin\\WinFormsApp1\\obj\\",
+        "projectPath": "D:\\BSA\\BookingSystemAdmin\\WinFormsApp1\\WinFormsApp1.csproj",
+        "packagesPath": "C:\\Users\\sledu\\.nuget\\packages\\",
+        "outputPath": "D:\\BSA\\BookingSystemAdmin\\WinFormsApp1\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\sledu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -58,7 +62,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }
